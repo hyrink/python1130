@@ -2,12 +2,15 @@
 
 #은행의 계정을 표현한 클래스 
 class BankAccount:
+    # 초기화 메서드
     def __init__(self, id, name, balance):
         self.id = id
         self.name = name 
         self.balance = balance 
+    # 입금 메서드
     def deposit(self, amount):
-        self.balance += amount 
+        self.balance += amount
+    # 출금 메서드
     def withdraw(self, amount):
         self.balance -= amount
     def __str__(self):
